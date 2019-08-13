@@ -1,25 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello App</title>
-    <link rel="icon" href="/img/favicon.png">
-    <link rel="stylesheet" href="/css/styles.min.css">
+    <link rel="icon" href="/img/smileyy.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/style1.css">
+
 </head>
+
 <body>
-    <div class="centered-form">
-        <div class="centered-form__box">
-            <h1>Join</h1>
-            <form action="/chat.html">
-                <label>Display Name</label>
-                <input type="text" name="username" placeholder="Display Name" required>
-                <label>Room</label>
-                <input type="text" name="room" placeholder="Room Name" required>
-                <button>Join</button>
-            </form>
+    <nav class="nav-wrapper">
+        <div class="container">
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="fa fa-bars" style="font-size: 20px; color: black;"></i>
+            </a>
+            <div class="cc" style="text-align: center;">
+                <div class="ccc" style="display: inline-block;">
+                    <ul class=" center-align hide-on-med-and-down">
+                        <li class="n1"><a href="#"><span></span>Home</a></li>
+                        <li class="n1"><a href="#"><span></span>About</a></li>
+                        <li class="n1"><a href="#"><span></span>Login</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
+
+    <div class="header">
+        <div class="head-text">
+            <div class="head-text-sm">
+                <h1>Hello App</h1>
+                <h4>Chat Application</h4>
+            </div>
+        </div>
+        <svg id="Layer_1" data-name="Layer 1" xmlns="https://www.w3.org/2000/svg" viewBox="200 -20 1400 500.00">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: #fff;
+                    }
+                </style>
+            </defs>
+            <title>Untitled-4</title>
+            <path class="cls-1" d="M0,400.8S300.00,700,950.0,280.0s750.83,500.57,700,-100.0V809.650H0V.0.0"
+                transform="translate(130-150)" />
+        </svg>
+        <div class="cover-svg"></div>
+    </div>
+    <div class="part-2">
+        <div class="side-text">
+            <div class="side-text-sm">
+                <div class="cf">
+                    <div class="cfb">
+                        <h1>Join your Chat Room</h1>
+                        <form action="/chat.html">
+                            <label>Display Name</label>
+                            <input type="text" name="username" placeholder="Display Name" required>
+                            <label>Room</label>
+                            <input type="text" name="room" placeholder="Room Name" required>
+                            <div class="join-btn-contain">
+                                <div class="join-sm">
+                                    <button><a class="waves-effect waves-light btn-large">Join</a></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="part-3">
+        <div class="footer">
+            <div class="footer-sm">
+                <h6>@2019 HelloApp. All rights reserved.</h6>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".nav-wrapper");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 </body>
+
 </html>

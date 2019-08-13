@@ -40,47 +40,22 @@ input {
 button {
     cursor: pointer;
     padding: 12px;
-    background: #7C5CBF;
+    background: #ffe57f;
     border: none;
-    color: white;
+    color: #000;
+    font-weight: bolder;
     font-size: 16px;
     transition: background .3s ease;
 }
 
 button:hover {
-    background: #6b47b8;
+    background: #000;
+    color: #ffe57f;
 }
 
 button:disabled {
     cursor: default;
     background: #7c5cbf94;
-}
-
-/* Join Page Styles */
-
-.centered-form {
-    background: #333744;
-    width: 100vw;
-    height: 100vh;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.centered-form__box {
-    box-shadow: 0px 0px 17px 1px #1D1F26;
-    background: #F7F7FA;
-    padding: 24px;
-    width: 250px;
-}
-
-.centered-form button {
-    width: 100%;
-}
-
-.centered-form input {
-    margin-bottom: 16px;
-    width: 100%;
 }
 
 /* Chat Page Layout */
@@ -91,8 +66,9 @@ button:disabled {
 
 .chat__sidebar {
     height: 100vh;
-    color: white;
-    background: #333744;
+    color: #000;
+    font-weight: bolder;
+    background: #ffe57f;
     width: 225px;
     overflow-y: scroll
 }
@@ -165,13 +141,15 @@ button:disabled {
 .room-title {
     font-weight: 400;
     font-size: 22px;
-    background: #2c2f3a;
+    background: #000;
+    color: #ffe57e;
+    text-align: center;
     padding: 24px;   
 }
 
 .list-title {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 4px;
     padding: 12px 24px 0 24px;
 }

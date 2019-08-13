@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+
+.nav-wrapper.scrolled {
+    background-color: #ffe082 !important;
+    /* box-shadow: 0px 10px 10px #ffe082;  */
+    transition: background-color 0.5s linear;
+}
+
+.nav-wrapper {
+    position: fixed;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+.sidenav {
+    padding: 10px;
+}
+
+.sidenav li {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.sidenav li a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container ul li a:hover {
+    background-color: transparent !important;
+}
+.container ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+    padding: 0 20px;
+}
+.container ul li {
+    padding: 0 20px;
+}
+/* HEADER */
+
+.header {
+    background-color: #ffe57f;
+    /* position: relative; */
+}
+
+.header svg {
+    margin-top: 130px;
+}
+
+.cover-svg {
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    margin-top: -30px;
+}
+
+.head-text {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    top: 20%;
+}
+
+.head-text-sm {
+    display: inline-block;
+    padding: 10px;
+}
+
+@media (max-width: 880px) {
+    .head-text {
+        top: 15%;
+    }
+}
+
+@media (max-width: 660px) {
+    .head-text {
+        top: 10%;
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 420px) {
+    .head-text {
+        top: 5%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+}
+
+/* SIDETEXT */
+
+.side-text {
+    /* background: #eee; */
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 0 5% 5% 5%;
+}
+
+.side-text-sm {
+    display: inlince-block;
+}
+
+/* JOIN */
+.cf {
+    text-align: center;
+    width: 100%;
+}
+.cfb {
+    display: inline-block;
+    width: 60%;
+}
+.cfb > form {
+    padding: 10%;
+    text-align: left;
+}
+.cfb > form > label {
+    display: inline-block;
+    font-size: 20px;
+}
+.join {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+}
+.join-btn-contain {
+    text-align: center;
+}
+.join-sm {
+    display: inline-block;
+}
+
+.join-sm a {
+    background: black;
+    transition: 0.5s;
+}
+
+.join-sm a:hover {
+    background: black;
+    /* color: black; */
+    /* font-weight: 500; */
+}
+/* FOOTER */
+
+.part-3 {
+    margin: 5% 0 0 0;
+    background-color: #ffe57f;
+}
+
+.footer {
+    padding: 5%;
+}
