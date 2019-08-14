@@ -68,6 +68,7 @@ socket.on('roomData', ({ room, users }) => {
     document.querySelector('#sidebar').innerHTML = html
 })
 
+
 $messageForm.addEventListener('submit', (e) => {
     e.preventDefault();
     //disable

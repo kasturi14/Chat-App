@@ -55,7 +55,7 @@ button:hover {
 
 button:disabled {
     cursor: default;
-    background: #7c5cbf94;
+    background: #ffe57f;
 }
 
 /* Chat Page Layout */
@@ -135,6 +135,23 @@ button:disabled {
 .compose button {
     font-size: 14px;
 }
+@media(max-width: 630px) {
+    .compose  {
+        display: block;
+    }
+    .compose button {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    .compose form {
+        display: block;
+        margin-right: 0px;
+    }
+    #send-location {
+        width: 100%;
+        margin: 10px 20px 10px 0;
+    }
+}
 
 /* Chat Sidebar Styles */
 
@@ -143,7 +160,7 @@ button:disabled {
     font-size: 22px;
     background: #000;
     color: #ffe57e;
-    text-align: center;
+    /* text-align: center; */
     padding: 24px;   
 }
 

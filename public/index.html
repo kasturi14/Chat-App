@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/style1.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link href="dist/hamburgers.css" rel="stylesheet"> -->
+
 
 </head>
 
@@ -22,9 +26,9 @@
             <div class="cc" style="text-align: center;">
                 <div class="ccc" style="display: inline-block;">
                     <ul class=" center-align hide-on-med-and-down">
-                        <li class="n1"><a href="#"><span></span>Home</a></li>
-                        <li class="n1"><a href="#"><span></span>About</a></li>
-                        <li class="n1"><a href="#"><span></span>Login</a></li>
+                        <li class="n1"><a href="/"><span></span>Home</a></li>
+                        <li class="n1"><a href="/"><span></span>About</a></li>
+                        <li class="n1"><a href="#join-room-div"><span></span>Join Room</a></li>
                     </ul>
                 </div>
             </div>
@@ -33,9 +37,9 @@
     </nav>
 
     <ul class="sidenav" id="mobile-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Join Room</a></li>
     </ul>
 
     <div class="header">
@@ -62,7 +66,7 @@
     <div class="part-2">
         <div class="side-text">
             <div class="side-text-sm">
-                <div class="cf">
+                <div class="cf" id="join-room-div">
                     <div class="cfb">
                         <h1>Join your Chat Room</h1>
                         <form action="/chat.html">
@@ -96,7 +100,6 @@
         $(document).ready(function () {
             $('.sidenav').sidenav();
         });
-
         $(function () {
             $(document).scroll(function () {
                 var $nav = $(".nav-wrapper");

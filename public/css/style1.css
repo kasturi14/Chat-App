@@ -82,13 +82,13 @@
     }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 780px) {
     .head-text {
         top: 10%;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 640px) {
     h1 {
         font-size: 40px;
     }
@@ -97,18 +97,32 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 440px) {
     .head-text {
         top: 5%;
     }
     h1 {
         font-size: 30px;
+        font-weight: bolder;
     }
     h4 {
         font-size: 20px;
     }
 }
-
+@media (max-width: 330px) {
+    .head-text {
+        top: 4%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+}
 /* SIDETEXT */
 
 .side-text {
